@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+     <link rel="stylesheet" type="text/css" href="styles.css">
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="wrapper">
+        <form action="/login" method="post">
+            <h1>Login</h1>
+            
+            <div class="input-box">
+                <input name="username" type="text" placeholder="Username" required>
+                <i class='bx bx-user' ></i>
+            </div>
+            
+            <div class="input-box">
+                <input name="password" type="password" placeholder="password" required>
+                <i class='bx bx-lock' ></i>
+            </div>
+
+            <div class="remember-forgot">
+                <label>
+                    <input type="checkbox"> Remember me
+                </label>
+                <a href="#">Forgot password?</a>
+            </div>
+            <button type="submit" class="btn">Log in</button>
+
+            <div class="register-link">
+                <p> Don't have an account? <a href="#">Register here</a></p>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
